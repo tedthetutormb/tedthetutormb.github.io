@@ -1,0 +1,144 @@
+/* global styles  */
+
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: grid;
+  place-items: center;
+  height: 100px;
+  background-color: lightgray;
+  border-bottom: 3px solid red;
+  /* display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 1fr 20px;
+        border-bottom: 3px solid purple;
+        background: url('../img/engine.jpg'); */
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  gap: 5rem;
+  padding: 1rem;
+}
+
+.car-button {
+  display: inline-block;
+  width: 130px;
+}
+
+.car-button img {
+  width: 100%;
+}
+
+.btnLink {
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  width: 130px;
+  padding: 0 5rem;
+  border: 2px solid black;
+  /* color: white; */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btnLink.orange {
+  border: 2px solid orange;
+}
+.btnLink.orange img {
+  filter: invert(48%) sepia(94%) saturate(2000%) hue-rotate(-10deg)
+    brightness(95%) contrast(90%);
+}
+
+.btnLink.green {
+  border: 2px solid green;
+}
+.btnLink.green img {
+  filter: invert(40%) sepia(91%) saturate(600%) hue-rotate(75deg)
+    brightness(90%) contrast(90%);
+}
+
+.btnLink.red {
+  border: 2px solid red;
+}
+.btnLink.red img {
+  filter: invert(23%) sepia(93%) saturate(7480%) hue-rotate(2deg)
+    brightness(90%) contrast(110%);
+}
+
+.btnLink.blue {
+  border: 2px solid blue;
+}
+.btnLink.blue img {
+  filter: invert(18%) sepia(93%) saturate(3500%) hue-rotate(200deg)
+    brightness(90%) contrast(95%);
+}
+
+.btnLink h3 {
+  text-align: center;
+  margin: -2.3rem 0 0 0;
+}
+/* img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+
+        width: 100%;
+        align-self: center;
+        } */
+ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+nav a {
+  color: rgba(114, 107, 47, 0.801);
+  text-decoration: none;
+}
+
+/* class page styles */
+
+section {
+  /* margin: 2rem; */
+  padding: 1rem;
+  border-radius: 10px;
+  border-bottom: 3px solid red;
+}
+section ol {
+  display: block;
+  margin-left: 1rem;
+  line-height: 1.5;
+}
+
+.lessonHeader {
+  text-align: center;
+  margin-top: 1rem;
+}
+.lessonHeader h2 {
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+.summary {
+  margin: 2rem 0;
+}
+.summary h3 {
+  margin-bottom: 1rem;
+}
+
+.k-and-u h3 {
+  margin-bottom: 1rem;
+}
