@@ -39,16 +39,14 @@ nav {
   gap: 1rem;
   width: 130px;
   padding: 0 5rem;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   /* color: white; */
   text-decoration: none;
   border-radius: 10px;
   font-weight: bold;
 }
-/* .green {
-  background-color: green;
-}
-.red {
+
+/* .red {
   background-color: red;
 }
 .blue {
@@ -57,6 +55,7 @@ nav {
 .orange {
   background-color: orange;
 } */
+
 .btnLink.orange {
   border: 2px solid orange;
 }
