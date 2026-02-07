@@ -142,3 +142,18 @@ section ol {
 .k-and-u h3 {
   margin-bottom: 1rem;
 }
+
+/* multiple choice styles */
+
+.multchoice {
+  margin: 1.5rem 0;
+}
+.multchoice h3 {
+  margin-bottom: 1rem;
+}
+.mcItem {
+  margin-bottom: 1rem;
+}
+.mcItem ol {
+  margin-left: 1.3rem;
+}
