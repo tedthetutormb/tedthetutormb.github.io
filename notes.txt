@@ -7,65 +7,65 @@ Each question is separated by a black line.
 
 Here is the text of the questions.
 `
-What is the main purpose of the intake stroke?
-To ignite the fuel
-To draw in the air‑fuel mixture
-To expel exhaust gases
-To compress the mixture
+The inventions in the video are mainly designed to:
+Make the shop look nicer
+Make auto repair tasks easier and faster
+Replace all standard tools
+Enter design competitions
 
-What part ignites the air‑fuel mixture?
-Valve
-Piston
-Spark plug
-Crankshaft
+A custom jig in an auto shop is used to:
+Store paperwork
+Hold or position parts securely
+Change engine oil
+Clean the floor
 
-What happens during the compression stroke?
-Exhaust gases leave the cylinder
-The piston moves down
-The mixture is squeezed into a smaller space
-The spark plug fires
+One benefit of using specialized tools is
+More guesswork
+Increased risk of damage
+Greater precision and control
+Slower repairs
 
-What causes the piston to move down in the power stroke?
-Combustion explosion
-Gravity
-Exhaust pressure
-Valve timing
+Many of the inventions in the video are made from:
+Gold and silver
+Simple, readily available materials
+Only factory‑made kits
+Plastic toys
 
-What is the crankshaft responsible for?
-Opening the valves
-Mixing fuel and air
-Converting piston motion into rotation
-Cooling the engine
+Safety is important with homemade tools because they:
+Are always perfectly tested
+Can fail if poorly built or misused
+Never break
+Are only decorative
 
-What is the purpose of the exhaust stroke?
-To bring in fresh air
-To remove burned gases
-To ignite the mixture
-To lubricate the piston
+A good shop invention should:
+Make the job more complicated
+Be unsafe but fast
+Solve a specific problem effectively
+Replace all safety equipment
 
-Why do engines often have multiple cylinders?
-To reduce emissions
-To improve smoothness and balance
-To increase spark plug life
-To reduce oil use
+One common purpose of lifting or support devices is to:
+Paint the vehicle
+Safely hold heavy components in place
+Check tire pressure
+Clean windows
 
-What does displacement measure?
-The size of the spark plug
-The total volume of all cylinders
-The weight of the engine
-The amount of exhaust produced
+Custom organizers or racks in a shop help by:
+Hiding tools
+Making tools harder to find
+Keeping tools and parts easy to access
+Reducing storage space
 
-What does torque represent?
-Rotational force
-Engine temperature
-Fuel efficiency
-Air pressure
+A time‑saving invention in a repair shop usually:
+Reduces the number of steps in a task
+Adds extra unnecessary steps
+Makes the job slower
+Only changes the colour of tools
 
-Which stroke directly produces power?
-Intake
-Compression
-Power
-Exhaust
+The video encourages viewers to:
+Ignore problems and work harder
+Think creatively about solving shop challenges
+Avoid using any special tools
+Stop maintaining equipment
 `
 
 Please convert the above text to HTML markup using the following format:
@@ -87,54 +87,7 @@ Please convert the above text to HTML markup using the following format:
 
   *** END MULT CHOICE GENERATION PROMPT
 
-  *** MULT CHOICE button
-I need a button to show the answers to multiple choice sections.
 
-There will be many of these so I need a way to differentiate each buttons section from all the other buttons (and answer sections)
-
-I was thinking of using button id's and matching classes for the multiple choice answers as follows.
-`
-<div class="multchoiceAnswers">
-  <h3>Multiple Choice Answers</h3>
-  <button class="btn-mc-answers" id="HJZXHfs0fgA">Show Answers</button>
-  <ol class="HJZXHfs0fgA" type="1">
-    <li>B</li>
-    <li>C</li>
-    <li>C</li>
-    <li>A</li>
-    <li>C</li>
-    <li>B</li>
-    <li>B</li>
-    <li>B</li>
-    <li>A</li>
-    <li>C</li>
-  </ol>
-</div>
-`
-
-Then I would use javaScript to toggle the classes for matching button id's.
-Is this the most efficient way of doing this?
-
-(Saved old code)
-<div class="multchoiceAnswers">
-  <h3>Multiple Choice Answers</h3>
-  <button class="btn-mc-answers" id="HJZXHfs0fgA">Show Answers</button>
-  <ol class="HJZXHfs0fgA" type="1">
-    <li>B</li>
-    <li>C</li>
-    <li>C</li>
-    <li>A</li>
-    <li>C</li>
-    <li>B</li>
-    <li>B</li>
-    <li>B</li>
-    <li>A</li>
-    <li>C</li>
-  </ol>
-</div>
-
-
-*** END MULT CHOICE button
 
 *** Knowledge & Understanding Answers
 Now I'd like to do the same thing for another section, here's a sample of the HTML for it:
@@ -178,3 +131,117 @@ Now I'd like to do the same thing for another section, here's a sample of the HT
 The buttons used the attribute "data-mc="HJZXHfs0fgA"
 Can we set up the same functionaliy for the 'k-and-u-answers' div?
 *** END Knowledge & Understanding Answers
+
+*** ENTIRE SECTION HTML GENERATION
+
+The entire section would be contained in these tags:
+<section class="lesson">
+
+</section>
+
+The first div within the section will be:
+`
+<div class="lessonHeader">
+
+  <h3>video title</h3>
+  <a href="(url)" target="_blank"
+    >(url)</a
+  >
+</div>
+`
+
+The second div within the section will be:
+`
+<div class="summary">
+  <h3>Summary of the Video</h3>
+  <p>
+    (The summary paragraph)
+  </p>
+</div>
+`
+
+The third div within the section will be:
+`
+<div class="k-and-u">
+  <h3>Knowledge & Understanding</h3>
+  <ol>
+    <li>(k-and-u item)</li>
+    <li>(k-and-u item)</li>
+    <li>(k-and-u item)</li>
+    <li>(k-and-u item)</li>
+    <li>(k-and-u item)</li>
+</div>
+`
+
+The fourth div within the section will be:
+`
+<div class="k-and-u-answers">
+  <h3>Knowledge & Understanding (Answers)</h3>
+
+  <button class="btn-ku-answers">Show Answers</button>
+
+  <ol>
+    <li>
+      <p>(first question)</p>
+      <p class="k-and-u-answer">
+        (first ANSWER item but only the text AFTER "Answer)
+      </p>
+    </li>
+    .
+    .
+    .
+  </ol>
+</div>
+`
+
+The fifth div within the section will be:
+`
+<div class="multchoice">
+  <h3>Multiple Choice Questions</h3>
+
+  <button class="btn-mc-questions">Show Questions</button>
+
+  (The multiple choice question formatted as we've been doing them)
+  <ol type="1">
+    <li class="mcItem">
+      (question text)
+      <ol type="A">
+        <li>(multiple choice item)</li>
+        <li>(multiple choice item)</li>
+        <li>(multiple choice item)</li>
+        <li>(multiple choice item)</li>
+      </ol>
+    </li>
+    .
+    .
+    .
+  </ol>
+</div>
+`
+
+And finally, the sixth div in the section will be:
+`
+  <div class="multchoiceAnswers" data-mc="HJZXHfs0fgA">
+    <h3>Multiple Choice Answers</h3>
+    <button class="btn-mc-answers">Show Answers</button>
+
+    <ol class="answers" type="1">
+      <li>(answer)</li>
+      <li>(answer)</li>
+      <li>(answer)</li>
+      <li>(answer)</li>
+      <li>(answer)</li>
+      <li>(answer)</li>
+      <li>(answer)</li>
+      <li>(answer)</li>
+      <li>(answer)</li>
+      <li>(answer)</li>
+    </ol>
+  </div>
+`
+
+
+
+
+
+    <!-- END Feb * -->

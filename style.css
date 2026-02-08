@@ -90,7 +90,18 @@ section ol {
   margin-left: 1.3rem;
 }
 
-.btn-mc-answers {
+.btn-ku-answers,
+.multchoice ol {
+  display: none;
+}
+.multchoice.visible ol {
+  display: block;
+}
+
+/* show hide buttons */
+.btn-mc-questions,
+.btn-mc-answers,
+.btn-ku-answers {
   display: block;
   margin: 0.5rem 0 0.5rem 0;
   padding: 0.5rem 1rem;
@@ -101,6 +112,16 @@ section ol {
   cursor: pointer;
 }
 
+/* k-and u answers */
+.k-and-u-answers ol {
+  display: none;
+}
+
+.k-and-u-answers.visible ol {
+  display: block;
+}
+
+/* multiple choice answers */
 .answers {
   display: none;
 }
@@ -108,5 +129,3 @@ section ol {
 .answers.visible {
   display: block;
 }
-
-/* button id's to display answers */
