@@ -1,0 +1,180 @@
+MULT CHOICE GENERATION PROMPT
+
+I have the following text that we need to convert to a multiple choice format.
+The first line is a question
+The next four line are possible answers
+Each question is separated by a black line.
+
+Here is the text of the questions.
+`
+What is the main purpose of the intake stroke?
+To ignite the fuel
+To draw in the air‑fuel mixture
+To expel exhaust gases
+To compress the mixture
+
+What part ignites the air‑fuel mixture?
+Valve
+Piston
+Spark plug
+Crankshaft
+
+What happens during the compression stroke?
+Exhaust gases leave the cylinder
+The piston moves down
+The mixture is squeezed into a smaller space
+The spark plug fires
+
+What causes the piston to move down in the power stroke?
+Combustion explosion
+Gravity
+Exhaust pressure
+Valve timing
+
+What is the crankshaft responsible for?
+Opening the valves
+Mixing fuel and air
+Converting piston motion into rotation
+Cooling the engine
+
+What is the purpose of the exhaust stroke?
+To bring in fresh air
+To remove burned gases
+To ignite the mixture
+To lubricate the piston
+
+Why do engines often have multiple cylinders?
+To reduce emissions
+To improve smoothness and balance
+To increase spark plug life
+To reduce oil use
+
+What does displacement measure?
+The size of the spark plug
+The total volume of all cylinders
+The weight of the engine
+The amount of exhaust produced
+
+What does torque represent?
+Rotational force
+Engine temperature
+Fuel efficiency
+Air pressure
+
+Which stroke directly produces power?
+Intake
+Compression
+Power
+Exhaust
+`
+
+Please convert the above text to HTML markup using the following format:
+  <ol type="1">
+    <li class="mcItem">
+      (first question)
+      <ol type="A">
+        <li>(first option)</li>
+        <li>(second option)</li>
+        <li>(third option)</li>
+        <li>(fourth option)</li>
+      </ol>
+    </li>
+    .
+    .
+    .
+
+  </ol>
+
+  *** END MULT CHOICE GENERATION PROMPT
+
+  *** MULT CHOICE button
+I need a button to show the answers to multiple choice sections.
+
+There will be many of these so I need a way to differentiate each buttons section from all the other buttons (and answer sections)
+
+I was thinking of using button id's and matching classes for the multiple choice answers as follows.
+`
+<div class="multchoiceAnswers">
+  <h3>Multiple Choice Answers</h3>
+  <button class="btn-mc-answers" id="HJZXHfs0fgA">Show Answers</button>
+  <ol class="HJZXHfs0fgA" type="1">
+    <li>B</li>
+    <li>C</li>
+    <li>C</li>
+    <li>A</li>
+    <li>C</li>
+    <li>B</li>
+    <li>B</li>
+    <li>B</li>
+    <li>A</li>
+    <li>C</li>
+  </ol>
+</div>
+`
+
+Then I would use javaScript to toggle the classes for matching button id's.
+Is this the most efficient way of doing this?
+
+(Saved old code)
+<div class="multchoiceAnswers">
+  <h3>Multiple Choice Answers</h3>
+  <button class="btn-mc-answers" id="HJZXHfs0fgA">Show Answers</button>
+  <ol class="HJZXHfs0fgA" type="1">
+    <li>B</li>
+    <li>C</li>
+    <li>C</li>
+    <li>A</li>
+    <li>C</li>
+    <li>B</li>
+    <li>B</li>
+    <li>B</li>
+    <li>A</li>
+    <li>C</li>
+  </ol>
+</div>
+
+
+*** END MULT CHOICE button
+
+*** Knowledge & Understanding Answers
+Now I'd like to do the same thing for another section, here's a sample of the HTML for it:
+`
+<div class="k-and-u-answers">
+  <h3>Knowledge & Understanding (Answers)</h3>
+  <ol>
+    <li>
+      <p>What are the four strokes of the engine cycle?</p>
+      <p class="k-and-u-answer">
+        Intake, Compression, Power, and Exhaust
+      </p>
+    </li>
+    <li>
+      <p>Why is valve timing important?</p>
+      <p class="k-and-u-answer">
+        It ensures valves open and close at the right time for efficient combustion.
+      </p>
+    </li>
+    <li>
+      <p>What part ignites the air‑fuel mixture?</p>
+      <p class="k-and-u-answer">
+        The spark plug.
+      </p>
+    </li>
+    <li>
+      <p>What does the crankshaft do??</p>
+      <p class="k-and-u-answer">
+        Converts piston motion into rotation.
+      </p>
+    </li>
+    <li>
+      <p>Why is compression necessary?</p>
+      <p class="k-and-u-answer">
+        It increases the energy released during combustion.
+      </p>
+    </li>
+</div>
+`
+
+The buttons used the attribute "data-mc="HJZXHfs0fgA"
+Can we set up the same functionaliy for the 'k-and-u-answers' div?
+*** END Knowledge & Understanding Answers

@@ -7,91 +7,14 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 header {
   display: grid;
   place-items: center;
   height: 100px;
-  /* background-color: lightgray; */
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  height: 200px;
-  gap: 2rem;
-  padding: 1rem;
-}
-
-.car-button {
-  display: inline-block;
-  width: 130px;
-}
-
-.car-button img {
-  width: 100%;
-}
-
-.btnLink {
-  display: grid;
-  place-content: center;
-  gap: 1rem;
-  width: 130px;
-  padding: 0 5rem;
-  /* border: 2px solid black; */
-  /* color: white; */
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-/* .red {
+  color: white;
   background-color: red;
-}
-.blue {
-  background-color: blue;
-}
-.orange {
-  background-color: orange;
-} */
-
-.btnLink.orange {
-  border: 2px solid orange;
-}
-.btnLink.orange img {
-  filter: invert(48%) sepia(94%) saturate(2000%) hue-rotate(-10deg)
-    brightness(95%) contrast(90%);
-}
-
-.btnLink.green {
-  border: 2px solid green;
-}
-.btnLink.green img {
-  filter: invert(40%) sepia(91%) saturate(600%) hue-rotate(75deg)
-    brightness(90%) contrast(90%);
-}
-
-.btnLink.red {
-  border: 2px solid red;
-}
-.btnLink.red img {
-  filter: invert(23%) sepia(93%) saturate(7480%) hue-rotate(2deg)
-    brightness(90%) contrast(110%);
-}
-
-.btnLink.blue {
-  border: 2px solid blue;
-}
-.btnLink.blue img {
-  filter: invert(18%) sepia(93%) saturate(3500%) hue-rotate(200deg)
-    brightness(90%) contrast(95%);
-}
-
-.btnLink h3 {
-  text-align: center;
-  margin: -2.3rem 0 0 0;
 }
 
 ul {
@@ -115,7 +38,7 @@ section {
   /* margin: 2rem; */
   padding: 1rem;
   /* border-radius: 10px; */
-  /* border-bottom: 3px solid red; */
+  border-bottom: 3px solid red;
 }
 section ol {
   display: block;
@@ -124,12 +47,12 @@ section ol {
 }
 
 .lessonHeader {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 1rem;
 }
 .lessonHeader h2 {
   text-align: center;
-  margin-bottom: 0.4rem;
+  margin-bottom: 2rem;
 }
 
 .summary {
@@ -142,7 +65,16 @@ section ol {
 .k-and-u h3 {
   margin-bottom: 1rem;
 }
-
+.k-and-u {
+  margin-bottom: 1rem;
+}
+.k-and-u li {
+  margin-bottom: 0.5rem;
+}
+.k-and-u-answer {
+  color: red;
+  margin-bottom: 0.5rem;
+}
 /* multiple choice styles */
 
 .multchoice {
@@ -157,3 +89,24 @@ section ol {
 .mcItem ol {
   margin-left: 1.3rem;
 }
+
+.btn-mc-answers {
+  display: block;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.answers {
+  display: none;
+}
+
+.answers.visible {
+  display: block;
+}
+
+/* button id's to display answers */
