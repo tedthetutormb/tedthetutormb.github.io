@@ -19,6 +19,10 @@ header {
   border-bottom-right-radius: 20px;
 }
 
+.activities a {
+  line-height: 1.5;
+}
+
 ul {
   margin: 0;
   display: flex;
