@@ -1,15 +1,13 @@
 Links for site:
 
 Engine parts quiz:
-https://www.youtube.com/watch?v=X4PEVU7psMo (Watch this first)
-
-https://take.quiz-maker.com/cp-hs-engine-parts-challenge
+https://www.youtube.com/watch?v=T8K802qSBKE
 
 
 
 MULT CHOICE GENERATION PROMPT
 
-I have the following text that we need to convert to a multiple choice format.
+I have the following text that we need to convert to a multipleje choice format.
 The first line is a question
 The next four line are possible answers
 Each question is separated by a black line.
